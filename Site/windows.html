@@ -289,10 +289,10 @@
 <p>Ladda ner iVentoy <a href="https://github.com/ventoy/PXE/releases">https://github.com/ventoy/PXE/releases</a> på en extern enhet och packa upp filen. Skapa en ISO med <a href="./imgburn.html">Imgburn</a> och lägg till iVentoy, OS-ISO och eventuell <a href="./skript.html">skriptfil</a>.</p>
 </br>  
 <p><img src="./windows/get_volume.jpg" alt="Bild" /></p>
-<p>Montera ISO:n i VM:et. Lista enheter med <code>Get-Volume</code>.</p>
+<p>Montera ISO:n i VM:et. Lista enheter med <code>Get-Volume</code>. ISO:n är monterad på enhet D.</p>
 </br>  
 <img src="./windows/ls_iso.jpg" width="500" height="242"/>  
-<p>ISO:n är monterad på enhet D. Mata in <code>cd d:</code> och sen <code>ls</code> för att se filerna på D. Flytta iVentoy-mappen till enhet C med:</p>
+<p>Mata in <code>cd d:</code> och sen <code>ls</code> för att se filerna på D. Flytta iVentoy-mappen till enhet C med:</p>
 <pre><code class="language-powershell">cp .\iventoy-1.0.20\ c: -recurse
 </code></pre>
 <p>och eventuell skriptfil med:</p>
@@ -313,7 +313,7 @@
 </br>  
 <p><img src="./windows/iventoy_window.jpg" alt="Bild" /></p>
 <p>Ett litet fönster dyker upp som kan gömma sig bakom terminalfönstret. Klicka på <kbd>Exit</kbd> knappen när iVentoy skall avslutas.</p>
-<p>Öppna en webbläsare på en extern enhet och skriv in adressen till datorn iVentoy är installerad på och ange port 26000. Exempelvis så här: http://192.168.10.22:26000 <a href="iventoy.html">Klicka</a> för snabbguide.</p>
+<p>Öppna en webbläsare på en extern enhet och skriv in adressen till datorn iVentoy är installerad på och ange port 26000. Exempel: http://192.168.10.22:26000 <a href="iventoy.html">Klicka</a> för snabbguide.</p>
 <style>
   .scroll-to-top {
     font-size: 2.5rem;

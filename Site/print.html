@@ -903,7 +903,7 @@ Exempel: <code>tar --help | less</code>. Piltangent ned kör en rad åt gången 
 <pre><code class="language-Bash">/dev/sr0 /home/user/iventoy-1.0.20/iso udf,iso9660 user,utf8 0 0  
 </code></pre>
 <p>Spara med <kbd>Ctrl</kbd> + <kbd>S</kbd> och stäng fönstret med <kbd>Ctrl</kbd> + <kbd>X</kbd>. Den optiska enheten monteras nu automatiskt vid uppstart i iVentoys iso-mapp.</p>
-<p>Kopiera eventuellt autounattend.xml-filen till iVentoys skriptmapp:</p>
+<p>Kopiera eventuell autounattend.xml-fil till iVentoys skriptmapp:</p>
 <pre><code class="language-Bash">cp /home/user/iventoy-1.0.20/iso/autounattend.xml /home/user/iventoy-1.0.20/user/scripts/
 </code></pre>
 </br>  
@@ -1081,10 +1081,10 @@ Exempel: <code>tar --help | less</code>. Piltangent ned kör en rad åt gången 
 <p>Ladda ner iVentoy <a href="https://github.com/ventoy/PXE/releases">https://github.com/ventoy/PXE/releases</a> på en extern enhet och packa upp filen. Skapa en ISO med <a href="./imgburn.html">Imgburn</a> och lägg till iVentoy, OS-ISO och eventuell <a href="./skript.html">skriptfil</a>.</p>
 </br>  
 <p><img src="./windows/get_volume.jpg" alt="Bild" /></p>
-<p>Montera ISO:n i VM:et. Lista enheter med <code>Get-Volume</code>.</p>
+<p>Montera ISO:n i VM:et. Lista enheter med <code>Get-Volume</code>. ISO:n är monterad på enhet D.</p>
 </br>  
 <img src="./windows/ls_iso.jpg" width="500" height="242"/>  
-<p>ISO:n är monterad på enhet D. Mata in <code>cd d:</code> och sen <code>ls</code> för att se filerna på D. Flytta iVentoy-mappen till enhet C med:</p>
+<p>Mata in <code>cd d:</code> och sen <code>ls</code> för att se filerna på D. Flytta iVentoy-mappen till enhet C med:</p>
 <pre><code class="language-powershell">cp .\iventoy-1.0.20\ c: -recurse
 </code></pre>
 <p>och eventuell skriptfil med:</p>
@@ -1105,7 +1105,7 @@ Exempel: <code>tar --help | less</code>. Piltangent ned kör en rad åt gången 
 </br>  
 <p><img src="./windows/iventoy_window.jpg" alt="Bild" /></p>
 <p>Ett litet fönster dyker upp som kan gömma sig bakom terminalfönstret. Klicka på <kbd>Exit</kbd> knappen när iVentoy skall avslutas.</p>
-<p>Öppna en webbläsare på en extern enhet och skriv in adressen till datorn iVentoy är installerad på och ange port 26000. Exempelvis så här: http://192.168.10.22:26000 <a href="iventoy.html">Klicka</a> för snabbguide.</p>
+<p>Öppna en webbläsare på en extern enhet och skriv in adressen till datorn iVentoy är installerad på och ange port 26000. Exempel: http://192.168.10.22:26000 <a href="iventoy.html">Klicka</a> för snabbguide.</p>
 <style>
   .scroll-to-top {
     font-size: 2.5rem;
@@ -1715,7 +1715,7 @@ http://192.168.10.20:16000/<strong>eiso</strong>/<strong>pmd5</strong>/e73acde93
 </code></pre>
 </br>  
 </br>  
-<p>En annan lösning är att ladda ner Windows genom <a href="https://uupdump.net/">UUP dump</a> där man kan välja senaste versionen och vad som skall ingå i ISO:n.</p>
+<p>En annan lösning är att ladda ner Windows genom <a href="https://uupdump.net/">UUP dump</a> och välja senaste versionen och vad som skall ingå i ISO:n.</p>
 </br>  
 </br>  
 <div class="mdbook-alerts mdbook-alerts-tips">
@@ -2182,7 +2182,7 @@ http://192.168.10.20:16000/<strong>eiso</strong>/<strong>pmd5</strong>/e73acde93
 men det kanske inte heller alltid funkar.</p>
 <p>För att flytta filer till Ubuntu Server VM finns det dock andra sätt. Navigera till “Home directory” med kommandot <code>cd</code>
 och mata in <code>sudo chown user Downloads</code> där <code>user</code> är användarnamnet vid inloggning på Ubuntu. Kommandoraden ger användaren
-”user” ägarskap över mappen Downloads. Öppna Powershell (admin) genom att shift-klicka i en mapp som en fil ska överföras
+”user” ägarskap över mappen Downloads. Öppna Powershell (admin) genom att shift-högerklicka i en mapp som en fil ska överföras
 från med SCP. Mata in filnamn och mottagare enligt följande:</p>
 <pre><code class="language-Powershell">scp fil.xxx användarnamn@IP-till-Ubuntu:/sökväg/till/mapp
 </code></pre>
