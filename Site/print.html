@@ -2192,13 +2192,43 @@ från med SCP. Mata in filnamn och mottagare enligt följande:</p>
 </code></pre>
 <p>Lösenord kommer att utkrävas av mottagaren (Ubuntu).</p>
 </br>  
-<div class="mdbook-alerts mdbook-alerts-notera">
-<p class="mdbook-alerts-title">
-  <span class="mdbook-alerts-icon"></span>
-  notera
-</p>
-<p>För överföring till Windows från Ubuntu krävs att SSH är installerad och konfigurerad på Windows-enheten.</p>
-</div>
+<p>För att överföra från Linux till Windows måste SSH installeras först.</p>
+<p><img src="./filetransfer/ssh1.jpg" alt="Bild" /></p>
+<ol>
+<li>Sök på Optional Features</li>
+<li>Klicka</li>
+</ol>
+</br>  
+<img src="./filetransfer/ssh2.jpg" width="500" height="573"/>  
+<ol>
+<li>Klicka på Add a feature
+I nästa ruta välj att installera OpenSSH Client och Server.</li>
+</ol>
+</br>  
+<p><img src="./filetransfer/ssh3.jpg" alt="Bild" /></p>
+<ol>
+<li>Tryck <kbd>Windows</kbd> + <kbd>R</kbd> och mata in services.msc</li>
+<li>Klicka OK</li>
+<li>Bläddra till OpenSSH SSH Server</li>
+<li>Högerklicka och välj Properties</li>
+</ol>
+</br>  
+<img src="./filetransfer/ssh4.jpg" width="350" height="403"/>  
+<ol>
+<li>Välj Automatic</li>
+<li>Klicka på Apply</li>
+</ol>
+<p>Starta om datorn.</p>
+</br>
+<p>För att överföra till Windows mata in så här:</p>
+<p>scp min.fil användarnamnWindows@ip.till.windows:C:/Users/Användare</p>
+<p>Exempel:</p>
+<pre><code class="language-bash">scp iventoy.sh administrator@192.168.37.65:C:/Users/Olle
+</code></pre>
+<p>Observera <code>/</code>.</p>
+</br>  
+<p><img src="./filetransfer/ssh5.jpg" alt="Bild" /></p>
+<p>När frågan om fingerprint dyker upp skriv “yes”.</p>
 <h2 id="winscp"><a class="header" href="#winscp">WinSCP</a></h2>
 <p>Smidigaste sättet att överföra är med WinSCP. Det överför åt båda hållen och kräver ingen förkonfiguration.</p>
 <p><video src="./filetransfer/WinSCP.mp4" controls></video></p>
