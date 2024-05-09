@@ -456,15 +456,15 @@ Men när klienterna befinner sig i en annan del av nätverket än servrarna, ell
 </br>  
 <h2 id="ubuntu-server-med-gui"><a class="header" href="#ubuntu-server-med-gui"><a href="./Ubuntu_Server_GUI.html">Ubuntu Server med GUI</a></a></h2>
 <p>Denna är lätt att installera. Tanken med denna guiden är att admin skall kunna ladda ner ISO:n på VM:et.</p>
-<p>Storlek på VM: 22 GB</p>
+<p>Minsta storlek på VM: 22 GB</p>
 </br>  
 <h2 id="ubuntu-server-utan-gui"><a class="header" href="#ubuntu-server-utan-gui"><a href="./Ubuntu_Server_NOGUI.html">Ubuntu Server <strong>utan</strong> GUI</a></a></h2>
 <p>Lite krånglig att få igång. Guiden är anpassad för att göra VM:et minimalt med en symlink till ISO-filer. Kan köras headless.</p>
-<p>Storlek på VM: 10 GB</p>
+<p>Minsta storlek på VM: 12 GB</p>
 </br>  
 <h2 id="windows-server-2022-standard-utan-gui"><a class="header" href="#windows-server-2022-standard-utan-gui"><a href="./windows.html">Windows Server 2022 Standard utan GUI</a></a></h2>
 <p>Lite krånglig att få igång. Guiden är anpassad för att göra VM:et minimalt med en symlink till ISO-filer. Körs headless.</p>
-<p>Storlek på VM: 10 GB</p>
+<p>Minsta storlek på VM: 12 GB</p>
 <style>
   .scroll-to-top {
     font-size: 2.5rem;
@@ -2361,7 +2361,7 @@ writable = yes
 <h2 id="en-guide-för-lvm"><a class="header" href="#en-guide-för-lvm">En guide för LVM</a></h2>
 <p>Autoinställningarna vid installation av Ubuntu Server använder sig av LVM.</p>
 <p><img src="./Linux/lvm.jpg" alt="Bild" /></p>
-<p>De vanliga diskverktygen klarar inte av denna strukturen utan man måste använda sig av terminalen. Kommandon som är användbara inför utökning av utrymmet:</p>
+<p>Om de vanliga diskverktygen inte klarar av denna måste man använda sig av terminalen. Kommandon som är användbara inför utökning av utrymmet:</p>
 <ul>
 <li>
 <p><code>df -h</code> visar partitionsstorleken där växeln -h är ”human readable”.</p>
@@ -2374,7 +2374,7 @@ writable = yes
 </li>
 </ul>
 </br>  
-<p>Om man vill utöka utrymmet så måste man börja med VM:et i Hyper-V.</p>
+<p>För att utöka utrymmet så måste man börja med VM:et i Hyper-V.</p>
 <p><img src="./Linux/expand_VM.jpg" alt="Bild" /></p>
 <ol>
 <li>Välj disken du vill utöka.</li>
