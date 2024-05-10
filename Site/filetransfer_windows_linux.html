@@ -320,11 +320,11 @@ I nästa ruta välj att installera OpenSSH Client och Server.</li>
 <p>WinSCP hämtas här: <a href="https://winscp.net/eng/download.php">https://winscp.net/eng/download.php</a></p>
 <h2 id="samba---smb"><a class="header" href="#samba---smb">Samba - SMB</a></h2>
 <p>För att installera Samba mata in:</p>
-<pre><code class="language-Bash">sudo apt update
+<pre><code class="language-bash">sudo apt update
 sudo apt install samba  
 </code></pre>
 <p>Skapa en delad mapp med <code>mkdir /home/user/Delad/</code> där <code>user</code> är användarnamnet. För att konfigurera Samba mata in <code>sudo nano /etc/samba/smb.conf</code>. Längst ner i fönstret läggs följande rader till:</p>
-<pre><code class="language-bash">[Delad]
+<pre><code class="language-default">[Delad]
 
 path = /home/user/Delad
 available = yes
