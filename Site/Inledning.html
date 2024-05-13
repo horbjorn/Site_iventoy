@@ -92,7 +92,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Distribution av OS på nätverk</li><li class="chapter-item expanded "><a href="Inledning.html" class="active"><strong aria-hidden="true">1.</strong> Inledning</a></li><li class="chapter-item expanded affix "><li class="part-title">Guide för operativsystem</li><li class="chapter-item expanded "><a href="os_versioner.html"><strong aria-hidden="true">2.</strong> Operativsystem</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Ubuntu_Server_GUI.html"><strong aria-hidden="true">2.1.</strong> Ubuntu Server med GUI</a></li><li class="chapter-item expanded "><a href="Ubuntu_Server_NOGUI.html"><strong aria-hidden="true">2.2.</strong> Ubuntu Server utan GUI</a></li><li class="chapter-item expanded "><a href="windows.html"><strong aria-hidden="true">2.3.</strong> Windows Server 2022 utan GUI</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">iVentoy</li><li class="chapter-item expanded "><a href="iventoy.html"><strong aria-hidden="true">3.</strong> Snabbguide</a></li><li class="chapter-item expanded "><a href="iventoy_settings.html"><strong aria-hidden="true">4.</strong> Inställningar</a></li><li class="chapter-item expanded affix "><li class="part-title">Autounattend</li><li class="chapter-item expanded "><a href="skript.html"><strong aria-hidden="true">5.</strong> Skript</a></li><li class="chapter-item expanded affix "><li class="part-title">Linux</li><li class="chapter-item expanded "><a href="omlinux.html"><strong aria-hidden="true">6.</strong> Om Linux</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="linux.html"><strong aria-hidden="true">6.1.</strong> Några (kort) kommando</a></li><li class="chapter-item expanded "><a href="filetransfer_windows_linux.html"><strong aria-hidden="true">6.2.</strong> Filöverföring</a></li><li class="chapter-item expanded "><a href="expand_disk_linux.html"><strong aria-hidden="true">6.3.</strong> Utöka utrymme</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Mjukvara</li><li class="chapter-item expanded "><a href="autojump.html"><strong aria-hidden="true">7.</strong> Autojump</a></li><li class="chapter-item expanded "><a href="gparted.html"><strong aria-hidden="true">8.</strong> Gparted</a></li><li class="chapter-item expanded "><a href="imgburn.html"><strong aria-hidden="true">9.</strong> Imgburn</a></li><li class="chapter-item expanded affix "><li class="part-title">Underhållning</li><li class="chapter-item expanded "><a href="videor.html"><strong aria-hidden="true">10.</strong> Video</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Distribution av OS på nätverk</li><li class="chapter-item expanded "><a href="inledning.html" class="active"><strong aria-hidden="true">1.</strong> Inledning</a></li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">2.</strong> Översikt över processen</a></li><li class="chapter-item expanded affix "><li class="part-title">Guide för operativsystem</li><li class="chapter-item expanded "><a href="os_versioner.html"><strong aria-hidden="true">3.</strong> Operativsystem</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Ubuntu_Server_GUI.html"><strong aria-hidden="true">3.1.</strong> Ubuntu Server med GUI</a></li><li class="chapter-item expanded "><a href="Ubuntu_Server_NOGUI.html"><strong aria-hidden="true">3.2.</strong> Ubuntu Server utan GUI</a></li><li class="chapter-item expanded "><a href="windows.html"><strong aria-hidden="true">3.3.</strong> Windows Server 2022 utan GUI</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">iVentoy</li><li class="chapter-item expanded "><a href="iventoy.html"><strong aria-hidden="true">4.</strong> Snabbguide</a></li><li class="chapter-item expanded "><a href="iventoy_settings.html"><strong aria-hidden="true">5.</strong> Inställningar</a></li><li class="chapter-item expanded affix "><li class="part-title">Autounattend</li><li class="chapter-item expanded "><a href="skript.html"><strong aria-hidden="true">6.</strong> Skript</a></li><li class="chapter-item expanded affix "><li class="part-title">Linux</li><li class="chapter-item expanded "><a href="omlinux.html"><strong aria-hidden="true">7.</strong> Om Linux</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="linux.html"><strong aria-hidden="true">7.1.</strong> Några (kort) kommando</a></li><li class="chapter-item expanded "><a href="filetransfer_windows_linux.html"><strong aria-hidden="true">7.2.</strong> Filöverföring</a></li><li class="chapter-item expanded "><a href="expand_disk_linux.html"><strong aria-hidden="true">7.3.</strong> Utöka utrymme</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Mjukvara</li><li class="chapter-item expanded "><a href="autojump.html"><strong aria-hidden="true">8.</strong> Autojump</a></li><li class="chapter-item expanded "><a href="gparted.html"><strong aria-hidden="true">9.</strong> Gparted</a></li><li class="chapter-item expanded "><a href="imgburn.html"><strong aria-hidden="true">10.</strong> Imgburn</a></li><li class="chapter-item expanded affix "><li class="part-title">Underhållning</li><li class="chapter-item expanded "><a href="videor.html"><strong aria-hidden="true">11.</strong> Video</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -256,76 +256,29 @@
 }
 
 </style>
-<h1 id="distribution-av-operativsystem-på-nätverk"><a class="header" href="#distribution-av-operativsystem-på-nätverk">Distribution av operativsystem på nätverk</a></h1>
-<h2 id="Översikt-över-processen"><a class="header" href="#Översikt-över-processen">Översikt över processen</a></h2>
-<p>En klient med PXE (Preboot eXecution Environment) aktiverad i sitt NIC(Network Interface Controller) har stöd för BOOTP (Bootstrap Protocol). Detta protokoll, som hanteras av en DHCP-server, gör det möjligt för klienten att få sin egen IP-adress samt information om var den kan hämta bootloadern.</p>
-<p>Sekvensen är enligt följande:</p>
-<ol>
-<li>
-<p>Klientens PXE-aktiverade NIC sänder ut sin MAC-adress (Medium access control) och begär en IP-adress från en BOOTP/DHCP-server.</p>
-</li>
-<li>
-<p>DHCP/BOOTP-servern, som kan vara konfigurerad med klientens MAC-adress och andra alternativ, returnerar en IP-adress till klienten tillsammans med namnet på TFTP-servern (Trivial File Transfer Protocol) och namnet på bootloader-filen, NBP (Network Boot Program), som finns på TFTP-servern.</p>
-</li>
-<li>
-<p>Klienten använder TFTP för att hämta bootloader-filen från TFTP-servern som tillhandahåller namnet på (*.ISO) filen den skall ladda. Därefter kör klienten filen och återfår sin IP-adress från DHCP-servern.</p>
-</li>
-</ol>
+<h1 id="distribution-av-programvara-över-nätverk"><a class="header" href="#distribution-av-programvara-över-nätverk">Distribution av programvara över nätverk</a></h1>
+<h4 id="iventoy--gratis-programvara-gör-det-smidigare"><a class="header" href="#iventoy--gratis-programvara-gör-det-smidigare">iVentoy – gratis programvara gör det smidigare</a></h4>
 </br>  
-<style>
-  svg {
-    background-color: #fff;
-  }
-</style>
-<pre class="mermaid">%%{
-  init: {
-    'theme': 'base',
-    'themeVariables': {
-      'primaryColor': '#abcadf',
-      'primaryTextColor': '#3e3e3e',
-      'primaryBorderColor': '#bfd2df',
-      'lineColor': '#bfbfbf'
-      
-      
-    }
-  }
-}%%
-
-
-sequenceDiagram
-
-    Autonumber
-    Klient-&gt;&gt; DHCP: Jag vill ha en DHCP- &amp; PXE-server.
-    DHCP-&gt;&gt;Klient: Jag är en DHCP-server.
-    DHCP--&gt;&gt; Klient: Skickar adressen till PXE-servern.
-    iVentoy-&gt;&gt; Klient: Jag är en PXE-server.
-
-    Klient-&gt;&gt; DHCP: Jag vill ha en IP-adress.
-    DHCP--&gt;&gt; Klient: Skickar en IP-adress.
-    Klient-&gt;&gt;iVentoy: Jag vill ha sökvägen till NBP-filen.
-    iVentoy--&gt;&gt;Klient: Skickar sökvägen till NBP-filen.
-    Klient-&gt; iVentoy: Hämtar &amp; kör NBP-filen.
-    iVentoy-&gt;&gt; Klient: iVentoy sänder operativsystemet. 
-   
-   
-    Note right of iVentoy: iVentoy kör TFTP-&lt;br/&gt;servern som sänder&lt;br/&gt;via UDP Port 69.
-
-
-
-</pre>
-<p>I DHCP-servern är det Option 66 och Option 67 som skall ställas in i “Scope options” med den information som krävs.</p>
-<ul>
-<li>
-<p>Option 66 anger vilken server som ska kontaktas</p>
-</li>
-<li>
-<p>Option 67 anger namnet på den bootloader-fil som ska begäras.</p>
-</li>
-</ul>
-<p>Den här metoden fungerar bra när klienterna befinner sig i samma del av nätverket som servrarna och har enhetlig arkitektur.
-Men när klienterna befinner sig i en annan del av nätverket än servrarna, eller om det finns en blandning av BIOS-, UEFI-, 32-bitars-, 64-bitars- och ARM-enheter, blir det lite rörigt. Var och en av dessa klienter behöver en specifik bootloader-fil som levereras till dem och DHCP-servern låter dig bara ange <em>en</em> bootloader-fil. iVentoy har dock en lösning.</p>
-<p>iVentoy kör den interna DHCP-servern parallellt med den externa men svarar inte på anrop. Däremot samlas information in om klienternas firmware; BIOS eller UEFI. Det virtuella filnamnet iventoy_loader_16000 som DHCP-servern sänder är betet, men korrekt bootloader-fil sänds till respektive firmware-version.</p>
-<p>Knivigare blir det när DHCP-servern befinner sig i ett annat LAN/VLAN. DHCP-servern som befinner sig på det externa nätet samlar in information om firmware-versioner och måste konfigureras så att varje klient får korrekt bootloader-fil. Detta ställer krav på DHCP-servern som måste kunna ställa in en sån konfiguration. Windows DHCP-server klarar inte det, så den här guiden täcker inte den lösningen.</p>
+<h2 id="sammanfattning"><a class="header" href="#sammanfattning">Sammanfattning</a></h2>
+<p>Uppgiften är att distribuera Windows 10 över nätverk och dokumentera arbetet. Ett smidigt alternativ för en obevakad process presenteras liksom tre alternativa värd-servrar. iVentoy kan köras från t.ex. Windows 10 Home, men är inte dokumenterad i guiden. Problem som har dykt upp har dokumenterats och lösningar har presenterats. I de fall extra programvara har krävts för att lösa problem har guider skapats.</p>
+<h3 id="1-bakgrund"><a class="header" href="#1-bakgrund">1. Bakgrund</a></h3>
+<p>Jag var nyfiken på hur en installation över nätverk skulle gå tillväga och hur man gjorde en obevakad installation.</p>
+<h4 id="11-syfte"><a class="header" href="#11-syfte">1.1 Syfte</a></h4>
+<p>Syftet är att lära mig hur en massdistribuering skall gå tillväga på ett effektivt vis.</p>
+<h4 id="12-frågeställningmål"><a class="header" href="#12-frågeställningmål">1.2 Frågeställning/Mål</a></h4>
+<p>Jag ville lära mig hur olika operativsystem skulle konfigureras för uppgiften. En tanke var också installera en mängd programvaror under processen, men det fanns ingen lösning på det. Winget löser det enkelt med skript efter installationen, men det ligger utanför uppgiften.</p>
+<h4 id="13-metod-och-material"><a class="header" href="#13-metod-och-material">1.3 Metod och material</a></h4>
+<p>Jag har främst använt mig av gratisprogram: Hyper-V, iVentoy och mdBook. Om man inte har tillgång till Hyper-V kan man t.ex. använda Qemu.</p>
+<h3 id="2-genomförande"><a class="header" href="#2-genomförande">2. Genomförande</a></h3>
+<h4 id="21-arbetsprocess"><a class="header" href="#21-arbetsprocess">2.1 Arbetsprocess</a></h4>
+<p>Dokumentationen av iVentoy lästes igenom. Processen mellan server, DHCP och klient fick utrönas med hjälp av Google, som så mycket annat. En del av sökresultaten var utdaterade, så det blev lite strul emellanåt. Informationen var inte alltid enhetlig vilket också utgjorde ett problem. Test gjordes i skolans nätverk för att se att det funkade ”live”, sen gjordes resten i Hyper-V. Då programvara och OS uppdateras fortlöpande stötte man på en del kommandon och program som inte funkade. Man fick testa sig fram.</p>
+<h4 id="22-dokumentation"><a class="header" href="#22-dokumentation">2.2 Dokumentation</a></h4>
+<p>För dokumentationen användes mdBook som primärt använder Markdown syntax för textformatering. mdBook kräver att Rust, MSVC, Windows 10 eller 11 SDK, Cmake och VS Code eller likvärdig källkodsredigerare installeras. Det fanns en del dokumentation att gå igenom, även på insticksprogrammen som inte funkade korrekt eller som behövde modifieras. Html-kod behövde även läggas till Mermaid efter att ha processats i mdBook. Inforutorna i guiden tillhör ett insticksprogram som modifierades med CSS och kompilerades till .exe med Rust. Screentogif användes för video och konverterades till mp4 med ffmpeg. Faststone Capture användes för skärmbilder. Dokumentationen tog lång tid att göra men kommer till nytta framöver förhoppningsvis.</p>
+<h3 id="3-avslutning-utvärdering"><a class="header" href="#3-avslutning-utvärdering">3. Avslutning/ Utvärdering</a></h3>
+<p>Det har varit kul att göra arbetet då man fått lära sig mycket nytt. Speciellt Linux var kul och nyttigt att arbeta med. iVentoy utvecklas fortlöpande viket alla programvaror gör. Under tiden jag skrivit guiden har Ubuntu hunnit släppa en ny version, likaså har autounattend-skriptet uppdaterats tre gånger. Det är nu lättare att förstå varför mycket av det jag googlat var utdaterat.</p>
+<p>Författare: Thorbjörn Jensen
+Lärare: Peter Berger
+Movant Lund</p>
 <style>
   .scroll-to-top {
     font-size: 2.5rem;
@@ -394,7 +347,7 @@ Men när klienterna befinner sig i en annan del av nätverket än servrarna, ell
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
 
-                        <a rel="next prefetch" href="os_versioner.html" class="mobile-nav-chapters next"
+                        <a rel="next prefetch" href="overview.html" class="mobile-nav-chapters next"
                             title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                             <i class="fa fa-angle-right"></i>
                         </a>
@@ -406,7 +359,7 @@ Men när klienterna befinner sig i en annan del av nätverket än servrarna, ell
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
 
-                <a rel="next prefetch" href="os_versioner.html" class="nav-chapters next" title="Next chapter"
+                <a rel="next prefetch" href="overview.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
                     <i class="fa fa-angle-right"></i>
                 </a>
