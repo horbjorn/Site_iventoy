@@ -265,21 +265,18 @@
 <h3 id="1-bakgrund"><a class="header" href="#1-bakgrund">1. Bakgrund</a></h3>
 <p>Jag var nyfiken på hur en installation över nätverk skulle gå tillväga och hur man gjorde en obevakad installation.</p>
 <h4 id="11-syfte"><a class="header" href="#11-syfte">1.1 Syfte</a></h4>
-<p>Syftet är att lära mig hur en massdistribuering skall gå tillväga på ett effektivt vis.</p>
+<p>Syftet är att lära mig hur massdistribuering skall gå tillväga på ett effektivt vis.</p>
 <h4 id="12-frågeställningmål"><a class="header" href="#12-frågeställningmål">1.2 Frågeställning/Mål</a></h4>
 <p>Jag ville lära mig hur olika operativsystem skulle konfigureras för uppgiften. En tanke var också installera en mängd programvaror under processen, men det fanns ingen lösning på det. Winget löser det enkelt med skript efter installationen, men det ligger utanför uppgiften.</p>
 <h4 id="13-metod-och-material"><a class="header" href="#13-metod-och-material">1.3 Metod och material</a></h4>
 <p>Jag har främst använt mig av gratisprogram: Hyper-V, iVentoy och mdBook. Om man inte har tillgång till Hyper-V kan man t.ex. använda Qemu.</p>
 <h3 id="2-genomförande"><a class="header" href="#2-genomförande">2. Genomförande</a></h3>
 <h4 id="21-arbetsprocess"><a class="header" href="#21-arbetsprocess">2.1 Arbetsprocess</a></h4>
-<p>Dokumentationen av iVentoy lästes igenom. Processen mellan server, DHCP och klient fick utrönas med hjälp av Google, som så mycket annat. En del av sökresultaten var utdaterade, så det blev lite strul emellanåt. Informationen var inte alltid enhetlig vilket också utgjorde ett problem. Test gjordes i skolans nätverk för att se att det funkade ”live”, sen gjordes resten i Hyper-V. Då programvara och OS uppdateras fortlöpande stötte man på en del kommandon och program som inte funkade. Man fick testa sig fram.</p>
+<p>Dokumentationen av iVentoy lästes igenom. Processen mellan server, DHCP och klient fick utrönas med hjälp av Google som så mycket annat. En del av sökresultaten var utdaterade, så det blev lite strul emellanåt. Informationen var inte alltid enhetlig vilket också utgjorde ett problem. Test gjordes i skolans nätverk för att se att det funkade ”live”, sen gjordes resten i Hyper-V.</p>
 <h4 id="22-dokumentation"><a class="header" href="#22-dokumentation">2.2 Dokumentation</a></h4>
 <p>För dokumentationen användes mdBook som primärt använder Markdown syntax för textformatering. mdBook kräver att Rust, MSVC, Windows 10 eller 11 SDK, Cmake och VS Code eller likvärdig källkodsredigerare installeras. Det fanns en del dokumentation att gå igenom, även på insticksprogrammen som inte funkade korrekt eller som behövde modifieras. Html-kod behövde även läggas till Mermaid efter att ha processats i mdBook. Inforutorna i guiden tillhör ett insticksprogram som modifierades med CSS och kompilerades till .exe med Rust. Screentogif användes för video och konverterades till mp4 med ffmpeg. Faststone Capture användes för skärmbilder. Dokumentationen tog lång tid att göra men kommer till nytta framöver förhoppningsvis.</p>
 <h3 id="3-avslutning-utvärdering"><a class="header" href="#3-avslutning-utvärdering">3. Avslutning/ Utvärdering</a></h3>
-<p>Det har varit kul att göra arbetet då man fått lära sig mycket nytt. Speciellt Linux var kul och nyttigt att arbeta med. iVentoy utvecklas fortlöpande viket alla programvaror gör. Under tiden jag skrivit guiden har Ubuntu hunnit släppa en ny version, likaså har autounattend-skriptet uppdaterats tre gånger. Det är nu lättare att förstå varför mycket av det jag googlat var utdaterat.</p>
-<p>Författare: Thorbjörn Jensen<br />
-Lärare: Peter Berger<br />
-Movant Lund</p>
+<p>Speciellt Linux var kul och nyttigt att arbeta med. iVentoy utvecklas fortlöpande och uppdateras så guiden kan snabbt bli utdaterad. Under tiden jag skrivit guiden har Ubuntu hunnit släppa en ny version, likaså har autounattend-skriptet uppdaterats tre gånger. En flaskhals iVentoy behöver adressera är att man måste gå in på de anslutna datorerna för att starta installationen. Förhoppningsvis löses detta med en framtida uppdatering.</p>
 <style>
   .scroll-to-top {
     font-size: 2.5rem;
