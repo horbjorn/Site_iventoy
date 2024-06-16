@@ -1,1 +1,1 @@
-Guide for iVentoy in Swedish
+Website for iVentoy guide in Swedish
