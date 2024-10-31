@@ -1,1 +1,3 @@
-Website for iVentoy guide in Swedish
+Some stuff for a course.  
+[https://iventoyguide.netlify.app/](https://iventoyguide.netlify.app/)
+
